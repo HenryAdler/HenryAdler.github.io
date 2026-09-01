@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry Adler | Portfolio</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+    }
+    h1 { margin-top: 0; color: #0284c7; }
+    label { display: block; margin-top: 15px; font-weight: 600; font-size: 14px; }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #0284c7;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover { background-color: #0369a1; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Henry Adler</h1>
+    <p>Get in touch using the form below:</p>
+
+    <!-- FORMULARIO FORMSPREE -->
+    <form action="https://formspree.io/f/SEU_FORM_ID" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="your.email@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
