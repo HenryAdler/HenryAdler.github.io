@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Henry Adler | Portfolio</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f8fafc;
-      color: #0f172a;
-      max-width: 600px;
-      margin: 60px auto;
-      padding: 20px;
-    }
-    .card {
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      border: 1px solid #e2e8f0;
-    }
-    h1 { margin-top: 0; color: #0284c7; }
-    label { display: block; margin-top: 15px; font-weight: 600; font-size: 14px; }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #cbd5e1;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      margin-top: 20px;
-      background-color: #0284c7;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 4px;
-      font-weight: 600;
-      cursor: pointer;
-      width: 100%;
-    }
-    button:hover { background-color: #0369a1; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic SEO -->
+    <title>Engineering & AI Portfolio | Portfolio</title>
+    <meta name="description" content="Technical portfolio showcasing mechanical engineering projects, thermal analysis, and machine learning applications.">
+    <meta name="author" content="Andrew M. Neves">
+
+    <!-- Open Graph / Social Share Preview -->
+    <meta property="og:title" content="Engineering & AI Portfolio">
+    <meta property="og:description" content="Technical projects, predictive models, and finite difference thermal simulations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-username.github.io/">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
-    <h1>Henry Adler</h1>
-    <p>Get in touch using the form below:</p>
+    <header>
+        <div class="header-container">
+            <h1>Andrew M. Neves</h1>
+            <p class="subtitle">Mechanical Engineering & Machine Learning Solutions</p>
+        </div>
+    </header>
 
-    <!-- FORMULARIO FORMSPREE -->
-    <form action="https://formspree.io/f/maeyoqyp" method="POST">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Your Name" required>
+    <main>
+        <!-- Search / Filter Section (Edge-case testing target) -->
+        <section id="search-section">
+            <h2>Featured Projects</h2>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search projects by keyword (e.g., FDM, ML, ASME)...">
+            </div>
+        </section>
 
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="your.email@example.com" required>
+        <!-- Projects Grid -->
+        <section id="projects">
+            <div class="project-grid" id="project-grid">
+                
+                <article class="project-card" data-tags="fdm thermal conduction heat transfer python">
+                    <h3>1D Steady-State Thermal Conduction (FDM)</h3>
+                    <p>Finite Difference Method solver implemented in Python for numerical thermal distribution analysis in solid media.</p>
+                    <a href="https://github.com/your-username/thermal-fdm" target="_blank" rel="noopener noreferrer" class="link-btn">View Repository</a>
+                </article>
 
-      <label for="message">Message</label>
-      <textarea name="message" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <article class="project-card" data-tags="3d printing predictive maintenance machine learning defect detection">
+                    <h3>Additive Manufacturing Defect Prediction</h3>
+                    <p>Machine learning classification models to predict print failure and detect real-time defects in industrial 3D printing.</p>
+                    <a href="https://github.com/your-username/am-predictive-maintenance" target="_blank" rel="noopener noreferrer" class="link-btn">View Repository</a>
+                </article>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+                <article class="project-card" data-tags="asme pressure vessel mechanical calculation engineering">
+                    <h3>ASME Sec. VIII Pressure Vessel Sizing</h3>
+                    <p>Analytical calculations and thickness design for torispherical and 2:1 elliptical heads under ASME VIII Div 1 standards.</p>
+                    <a href="https://github.com/your-username/pressure-vessel-calc" target="_blank" rel="noopener noreferrer" class="link-btn">View Repository</a>
+                </article>
 
+            </div>
+            <p id="no-results" class="no-results hidden">No projects found matching your search term.</p>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact & Collaboration</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn">Send Message</button>
+            </form>
+            <div id="form-feedback" class="feedback-msg"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Andrew M. Neves. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
