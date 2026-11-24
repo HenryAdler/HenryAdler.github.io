@@ -3,120 +3,421 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Basic SEO -->
-    <title>Engineering & AI Portfolio | Portfolio</title>
-    <meta name="description" content="Technical portfolio showcasing mechanical engineering projects, thermal analysis, and machine learning applications.">
-    <meta name="author" content="Henry Adler">
 
-    <!-- Open Graph / Social Share Preview -->
-    <meta property="og:title" content="Engineering & AI Portfolio">
-    <meta property="og:description" content="Technical projects, predictive models, and finite difference thermal simulations.">
+    <!-- SEO & Metadata -->
+    <title>Henry Adler. | Mechanical Engineering & Machine Learning</title>
+    <meta name="description" content="Technical portfolio of Henry Adler Minto Neves — Mechanical Engineering, Machine Learning, Aerodynamics (OpenVSP), Thermal FEA, and Physics-Constrained AI.">
+    <meta name="author" content="Henry Adler Minto Neves">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Henry Adler. | Mechanical Engineering & Machine Learning">
+    <meta property="og:description" content="Bridging classical mechanical engineering, thermodynamics, and experimental metrology with machine learning and physics-constrained AI.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="henryadler.github.io">
+    <meta property="og:url" content="https://henryadler.github.io/">
+
+    <!-- Identity Kit Favicon (HA Monogram) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563EB'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23FFFFFF' font-family='Inter,Arial,sans-serif' font-weight='700' font-size='28'%3EHA%3C/text%3E%3C/svg%3E">
+
+    <!-- Identity Kit Typography: Inter (400 Regular & 700 Bold) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <h1>Henry Adler</h1>
-            <p class="subtitle">Mechanical Engineering & Machine Learning Solutions</p>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="wordmark">Henry Adler<span class="accent-dot">.</span></a>
+            <div class="nav-links">
+                <a href="#featured-capstone">Capstone</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <p class="eyebrow">Mechanical Engineering &bull; Machine Learning &bull; Physics-Constrained AI</p>
+            <h1>Turning physical rigor into predictive engineering solutions<span class="accent-dot">.</span></h1>
+            <p class="hero-summary">
+                Mechanical Engineering undergraduate and Machine Learning intern bridging classical thermodynamics, aerodynamics, and ISO-standardized experimental testing with leak-free ML pipelines and scientific prompt engineering.
+            </p>
+
+            <div class="hero-actions">
+                <a href="Henry_Adler_Minto_Neves_Resume_EN.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    View Resume (PDF)
+                </a>
+                <a href="Henry_Adler_Minto_Neves_Resume_EN.pdf" download class="btn btn-secondary">
+                    Download CV
+                </a>
+                <a href="Henry_Adler_Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    Engineering Slides (PDF)
+                </a>
+                <a href="https://github.com/HenryAdler" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                    GitHub &nearr;
+                </a>
+            </div>
         </div>
     </header>
-    
-<!-- Insira este trecho logo abaixo da tag de subtítulo -->
-<div style="margin-top: 15px; margin-bottom: 25px; display: flex; gap: 10px;">
-  <a href="Henry_Adler_Portfolio.pdf" target="_blank" style="padding: 8px 16px; background-color: #0969da; color: white; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 500;">
-    📄 View Full PDF Portfolio
-  </a>
-  <a href="Henry_Adler_Portfolio.pdf" download style="padding: 8px 16px; border: 1px solid #d0d7de; color: #24292f; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 500; background-color: #f6f8fa;">
-    ⬇️ Download PDF
-  </a>
-      <a href="Henry_Adler_Minto_Neves_Resume_EN.pdf" target="_blank" style="padding: 8px 16px; background-color: #0969da; color: white; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 500;">
-    📄 View Full PDF CV
-  </a>
-  <a href="Henry_Adler_Minto_Neves_REsume_EN.pdf" download style="padding: 8px 16px; border: 1px solid #d0d7de; color: #24292f; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 500; background-color: #f6f8fa;">
-    ⬇️ Download PDF
-  </a>
-</div>
-    
-    <main>
-        <!-- Search / Filter Section (Edge-case testing target) -->
-        <section id="search-section">
-            <h2>Featured Projects</h2>
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Search projects by keyword (e.g., FDM, ML, ASME)...">
+
+    <main class="container">
+
+        <!-- Flagship Case Study: FlyRank ML Internship Capstone -->
+        <section id="featured-capstone" class="section">
+            <div class="section-header">
+                <span class="section-tag">Featured Capstone &bull; Machine Learning</span>
+                <h2>Organic Search Decay Prediction</h2>
             </div>
+
+            <article class="capstone-card">
+                <div class="capstone-top">
+                    <div class="capstone-intro">
+                        <div class="pill-row">
+                            <span class="pill">Grouped Cross-Validation</span>
+                            <span class="pill">30,000 URLs &bull; 32 Clients</span>
+                            <span class="pill">PR-AUC 0.575</span>
+                        </div>
+                        <h3>Preventing Cross-Client Data Leakage in Content Decay Forecasting</h3>
+                        <p class="capstone-lead">
+                            End-to-end machine learning classification pipeline and operational refresh playbook built during the FlyRank AI Internship to identify decaying web assets before severe organic traffic loss.
+                        </p>
+                    </div>
+
+                    <!-- Official FlyRank Graduation Badge (Authenticity Seal) -->
+                    <div class="badge-wrapper">
+                        <a href="https://internship.flyrank.ai/verify?id=FR-D1-T668H-R789R&amp;first_name=Henry" target="_blank" rel="noopener noreferrer"
+                           aria-label="Verify Henry Adler's FlyRank AI Internship credential FR-D1-T668H-R789R"
+                           style="box-sizing:border-box;margin:0;padding:0;border:0;background:none;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-style:normal;line-height:1.25;text-transform:none;float:none;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;justify-content:space-between;width:184px;height:184px;padding:18px;background:#FFFFFF;border:1px solid #DDE4E7;border-radius:20px;box-shadow:0 1px 2px rgba(5,31,33,0.05)">
+                          <span style="margin:0;padding:0;border:0;background:none;color:inherit;font-weight:400;font-style:normal;letter-spacing:normal;text-transform:none;text-decoration:none;white-space:normal;float:none;display:flex;align-items:flex-start;justify-content:space-between">
+                            <svg width="34" height="34" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display:block;flex:none;opacity:1;transform:none;max-width:none"><rect width="96" height="96" rx="22" fill="#051F21" /><path d="M28.2354 74.2202V67.9039C29.6419 68.4369 31.3724 68.7055 33.4311 68.7055C35.3235 68.7055 36.8153 68.2396 37.8979 67.3079C38.9805 66.3762 39.9566 64.8695 40.8218 62.792L42.6887 58.3139L29.8976 29.2879C35.0038 29.2879 39.6028 32.3307 41.5294 36.9893L47.0746 50.3985L56.0126 28.6038C57.9221 23.9452 62.5168 20.894 67.6187 20.894L50.0795 63.5936C48.4556 67.5933 46.5205 70.5102 44.2743 72.3484C42.0281 74.1867 39.1169 75.1058 35.5451 75.1058C32.6212 75.1058 30.1875 74.812 28.2354 74.2244V74.2202Z" fill="#54E399" /></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display:block;flex:none;opacity:1;transform:none;max-width:none"><circle cx="12" cy="12" r="10" stroke="#1A7A4A" stroke-width="1.5" /><path d="M7.9 12.3l2.8 2.8 5.4-5.8" stroke="#1A7A4A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                          </span>
+                          <span style="margin:0;padding:0;border:0;background:none;color:inherit;font-weight:400;font-style:normal;letter-spacing:normal;text-transform:none;text-decoration:none;white-space:normal;float:none;display:flex;flex-direction:column;gap:5px">
+                            <span style="margin:0;padding:0;border:0;background:none;color:inherit;font-weight:400;font-style:normal;letter-spacing:normal;text-transform:none;text-decoration:none;white-space:normal;float:none;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:8.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(5,31,33,0.5)">FlyRank AI Internship</span>
+                            <span style="margin:0;padding:0;border:0;background:none;color:inherit;font-weight:400;font-style:normal;letter-spacing:normal;text-transform:none;text-decoration:none;white-space:normal;float:none;font-size:14px;font-weight:600;color:#051F21;letter-spacing:-0.01em;line-height:1.3">Machine Learning</span>
+                          </span>
+                          <span style="margin:0;padding:0;border:0;background:none;color:inherit;font-weight:400;font-style:normal;letter-spacing:normal;text-transform:none;text-decoration:none;white-space:normal;float:none;display:flex;flex-direction:column;gap:5px;padding-top:12px;border-top:1px solid #E4EAED">
+                            <span style="margin:0;padding:0;border:0;background:none;color:inherit;font-weight:400;font-style:normal;letter-spacing:normal;text-transform:none;text-decoration:none;white-space:normal;float:none;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10.5px;color:#1A7A4A">FR-D1-T668H-R789R</span>
+                            <span style="margin:0;padding:0;border:0;background:none;color:inherit;font-weight:400;font-style:normal;letter-spacing:normal;text-transform:none;text-decoration:none;white-space:normal;float:none;font-size:11.5px;color:rgba(5,31,33,0.5)">Verify credential &#8599;</span>
+                          </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Three-Beat Case Structure -->
+                <div class="three-beat-grid">
+                    <div class="beat-box">
+                        <span class="beat-label">01 &bull; Problem</span>
+                        <p>Standard random train/test splits leak domain-specific patterns across URLs, inflating PR-AUC to 0.751 and misallocating editorial refresh resources on unseen client sites.</p>
+                    </div>
+                    <div class="beat-box">
+                        <span class="beat-label">02 &bull; What I Did</span>
+                        <p>Modeled 30,000 rows across 32 anonymized clients (54.2% decay base rate) using a client-grouped validation split, permutation importance, and an automated action playbook.</p>
+                    </div>
+                    <div class="beat-box">
+                        <span class="beat-label">03 &bull; What Came of It</span>
+                        <p>Established an honest out-of-client benchmark (<strong>0.575 PR-AUC</strong>), isolated <code>impressions_90d</code> and <code>content_age_days</code> as primary decay drivers, and generated a ranked refresh queue.</p>
+                    </div>
+                </div>
+
+                <div class="card-footer-actions">
+                    <button type="button" class="btn btn-primary open-case-btn" data-case="flyrank">
+                        Read Full Case Study
+                    </button>
+                    <a href="https://github.com/HenryAdler/FlyRank" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        View GitHub Repository &nearr;
+                    </a>
+                </div>
+            </article>
         </section>
 
-        <!-- Projects Grid -->
-        <section id="projects">
+        <!-- Engineering & AI Case Studies Grid -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-tag">Selected Engineering &amp; AI Work</span>
+                <h2>Case Studies &amp; Technical Documentation</h2>
+            </div>
+
+            <!-- Search & Category Filter Controls -->
+            <div class="filter-controls">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search by keyword (e.g., OpenVSP, PLA, ASME, FDM, Vibrations, ML)..." aria-label="Search projects">
+                </div>
+                <div class="filter-pills" role="group" aria-label="Filter projects by domain">
+                    <button type="button" class="filter-btn active" data-filter="all">All (7)</button>
+                    <button type="button" class="filter-btn" data-filter="ai-ml">AI &amp; Automation</button>
+                    <button type="button" class="filter-btn" data-filter="aero-mech">Aerodynamics &amp; Mechanical</button>
+                    <button type="button" class="filter-btn" data-filter="thermal-mat">Thermal &amp; Materials</button>
+                </div>
+            </div>
+
             <div class="project-grid" id="project-grid">
-                
-                <article class="project-card" data-tags="fdm thermal conduction heat transfer python">
-                    <h3>1D Steady-State Thermal Conduction (FDM)</h3>
-                    <p>Finite Difference Method solver implemented in Python for numerical thermal distribution analysis in solid media.</p>
-                    <a href="https://github.com/your-username/thermal-fdm" target="_blank" rel="noopener noreferrer" class="link-btn">View Repository</a>
+
+                <!-- Case 1: AeroDesign & OpenVSP -->
+                <article class="project-card" data-category="aero-mech ai-ml" data-tags="aerodesign openvsp vspaero xflr5 aerodynamics cfd python prompt engineering selig-1223rtl">
+                    <div>
+                        <div class="card-meta">
+                            <span class="badge-domain">Aerodynamics &amp; Prompt Eng.</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h3>Parametric RC Wing Aerodynamics &amp; VSPAERO Automation</h3>
+                        <p class="card-summary">
+                            <strong>Problem:</strong> Manual OpenVSP wing setup and low-Reynolds sweeps are slow and error-prone.<br>
+                            <strong>Action:</strong> Built physics-constrained Python/OpenVSP scripts for a Selig-1223RTL trapezoidal wing (Span 2.4 m, AR 4.0) cross-validated with XFLR5.<br>
+                            <strong>Result:</strong> Automated 21-point &alpha; sweeps (0&deg;&ndash;10&deg;) and stall regime mapping (6.5&deg;&ndash;10&deg;).
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <button type="button" class="text-btn open-case-btn" data-case="aerodesign">Case Details</button>
+                        <a href="Projeto%20de%20Aerodesing%20para%20Competicao.pdf" target="_blank" rel="noopener noreferrer" class="text-link">Project PDF &nearr;</a>
+                    </div>
                 </article>
 
-                <article class="project-card" data-tags="3d printing predictive maintenance machine learning defect detection">
-                    <h3>Additive Manufacturing Defect Prediction</h3>
-                    <p>Machine learning classification models to predict print failure and detect real-time defects in industrial 3D printing.</p>
-                    <a href="https://github.com/your-username/am-predictive-maintenance" target="_blank" rel="noopener noreferrer" class="link-btn">View Repository</a>
+                <!-- Case 2: PLA Thermal Annealing -->
+                <article class="project-card" data-category="thermal-mat ai-ml" data-tags="pla thermal annealing fdm 3d printing iso 4288 iso 527-2 mitutoyo emic materials">
+                    <div>
+                        <div class="card-meta">
+                            <span class="badge-domain">Materials &amp; Metrology</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h3>Thermal Smoothing (Annealing) of FDM 3D-Printed PLA</h3>
+                        <p class="card-summary">
+                            <strong>Problem:</strong> FDM PLA parts suffer from high surface roughness (<em>Ra</em>) yet warp easily above <em>Tg</em>.<br>
+                            <strong>Action:</strong> Tested 36 roughness samples (ISO 4288) and 6 tensile bars (ISO 527-2) across 60&deg;C&ndash;120&deg;C.<br>
+                            <strong>Result:</strong> Identified 80&deg;C / 30 min as optimal (&minus;4.59% <em>Ra</em> with only &minus;4.1% UTS trade-off).
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <button type="button" class="text-btn open-case-btn" data-case="pla-annealing">Case Details</button>
+                        <a href="Henry_Adler_Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="text-link">Lab Report PDF &nearr;</a>
+                    </div>
                 </article>
 
-                <article class="project-card" data-tags="asme pressure vessel mechanical calculation engineering">
-                    <h3>ASME Sec. VIII Pressure Vessel Sizing</h3>
-                    <p>Analytical calculations and thickness design for torispherical and 2:1 elliptical heads under ASME VIII Div 1 standards.</p>
-                    <a href="https://github.com/your-username/pressure-vessel-calc" target="_blank" rel="noopener noreferrer" class="link-btn">View Repository</a>
+                <!-- Case 3: ASME Pressure Vessel -->
+                <article class="project-card" data-category="aero-mech" data-tags="asme section viii pressure vessel torispherical mechanical design stress calculation">
+                    <div>
+                        <div class="card-meta">
+                            <span class="badge-domain">Structural &amp; Pressure Vessels</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h3>ASME Sec. VIII Torispherical Pressure Vessel Sizing</h3>
+                        <p class="card-summary">
+                            <strong>Problem:</strong> High-pressure containment requires strict wall-thickness and relief-setting compliance.<br>
+                            <strong>Action:</strong> Performed analytical sizing for cylindrical shells and torispherical heads under ASME VIII Div. 1.<br>
+                            <strong>Result:</strong> Validated allowable stress thresholds and PMTA safety margins for fabrication.
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <button type="button" class="text-btn open-case-btn" data-case="asme-vessel">Case Details</button>
+                        <a href="Contrucao%20de%20Vaso%20de%20Press%C3%A3o%20Toriesf%C3%A9rico.pdf" target="_blank" rel="noopener noreferrer" class="text-link">Technical PDF &nearr;</a>
+                    </div>
                 </article>
-                
-<div style="border: 1px solid #d0d7de; border-radius: 6px; padding: 16px; background-color: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-  <h3 style="margin-top: 0; font-size: 16px; font-weight: 600; color: #1f2328;">
-    Complete Engineering Portfolio (PDF)
-  </h3>
-  <p style="font-size: 14px; color: #57606a; line-height: 1.4;">
-    Comprehensive document covering aerodynamics (OpenVSP), PLA thermal smoothing experiments (ISO standards), and AI prompt engineering integration.
-  </p>
-  <a href="Henry_Adler_Portfolio.pdf" target="_blank" style="color: #0969da; font-weight: 500; font-size: 14px; text-decoration: none;">
-    View Document →
-  </a>
-</div>
-                
+
+                <!-- Case 4: Mechanical Vibrations - Ore Screener -->
+                <article class="project-card" data-category="aero-mech" data-tags="mechanical vibrations ore screener peneirador minerio resonance natural frequency">
+                    <div>
+                        <div class="card-meta">
+                            <span class="badge-domain">Dynamics &amp; Vibrations</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h3>Mechanical Vibrations Analysis — Industrial Ore Screener</h3>
+                        <p class="card-summary">
+                            <strong>Problem:</strong> Vibrating ore screeners risk structural fatigue when operating near natural frequencies.<br>
+                            <strong>Action:</strong> Modeled dynamic excitation, spring isolation, and transmissibility for a mining screener.<br>
+                            <strong>Result:</strong> Established safe operating frequency bands and isolation parameters to protect support frames.
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <a href="ARTIGO%20-%20VIBRA%C3%87%C3%95ES%20MEC%C3%82NICA%20-%20PENEIRADOR%20DE%20MIN%C3%89RIO.pdf" target="_blank" rel="noopener noreferrer" class="text-link">Read Article (PDF) &nearr;</a>
+                    </div>
+                </article>
+
+                <!-- Case 5: 1D Steady-State Thermal Conduction (FDM) -->
+                <article class="project-card" data-category="thermal-mat" data-tags="1d steady-state thermal conduction fdm finite difference method heat transfer numerical">
+                    <div>
+                        <div class="card-meta">
+                            <span class="badge-domain">Heat Transfer &amp; Numerical</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h3>1D Steady-State Thermal Conduction (FDM)</h3>
+                        <p class="card-summary">
+                            <strong>Problem:</strong> Discretizing boundary-value heat conduction problems with convective and fixed-temperature nodes.<br>
+                            <strong>Action:</strong> Formulated and solved linear nodal energy balance systems using Finite Difference Methods.<br>
+                            <strong>Result:</strong> Verified nodal temperature profiles against exact analytical Fourier conduction solutions.
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <a href="1D%20Steady-State%20Thermal%20Conduction%20(FDM).pdf" target="_blank" rel="noopener noreferrer" class="text-link">View Study (PDF) &nearr;</a>
+                    </div>
+                </article>
+
+                <!-- Case 6: 2D Heat Conduction -->
+                <article class="project-card" data-category="thermal-mat" data-tags="2d heat conduction conducao bidimensional thermal field finite difference">
+                    <div>
+                        <div class="card-meta">
+                            <span class="badge-domain">Heat Transfer &amp; Numerical</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h3>2D Steady-State Heat Conduction Field Modeling</h3>
+                        <p class="card-summary">
+                            <strong>Problem:</strong> Multidimensional thermal gradients require 2D mesh discretization across internal and boundary nodes.<br>
+                            <strong>Action:</strong> Constructed 2D control-volume balance equations and solved planar temperature distributions.<br>
+                            <strong>Result:</strong> Mapped isothermal contours and boundary heat flux rates across 2D solid geometries.
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <a href="CONDUCAO%20BIDIMENSIONAL.pdf" target="_blank" rel="noopener noreferrer" class="text-link">View Study (PDF) &nearr;</a>
+                    </div>
+                </article>
+
+                <!-- Case 7: Content Pipeline Automation Guide -->
+                <article class="project-card" data-category="ai-ml" data-tags="automation pipeline content workflow llm ai operations guide">
+                    <div>
+                        <div class="card-meta">
+                            <span class="badge-domain">AI Workflows &amp; Automation</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h3>Automated Content Operations Pipeline Architecture</h3>
+                        <p class="card-summary">
+                            <strong>Problem:</strong> Repetitive content ingestion, structuring, and QA workflows bottleneck editorial velocity.<br>
+                            <strong>Action:</strong> Designed a structured, step-by-step automation architecture with standardized validation gates.<br>
+                            <strong>Result:</strong> Delivered a reproducible operational guide reducing manual handoffs and formatting drift.
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <a href="Guia%20de%20Automacao%20de%20Pipeline%20de%20Conteudo%20PT-BR.pdf" target="_blank" rel="noopener noreferrer" class="text-link">View Guide (PDF) &nearr;</a>
+                    </div>
+                </article>
+
+                <!-- =====================================================================
+                     NEXT CASE STUDY SLOT (Week 10 Modular Habit Template)
+                     To add your next project, copy the <article> block below, paste it
+                     above this comment, fill in Problem / Action / Result, and update
+                     the category filter count in the HTML above.
+                ======================================================================
+                <article class="project-card" data-category="ai-ml" data-tags="keywords here">
+                    <div>
+                        <div class="card-meta">
+                            <span class="badge-domain">Domain Tag</span>
+                            <span class="badge-year">2026</span>
+                        </div>
+                        <h3>Project Title</h3>
+                        <p class="card-summary">
+                            <strong>Problem:</strong> Specific bottleneck or engineering question.<br>
+                            <strong>Action:</strong> Concrete dataset, method, standard, or model built.<br>
+                            <strong>Result:</strong> Quantified outcome or validated engineering decision.
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <a href="your-file-or-repo-link" target="_blank" rel="noopener noreferrer" class="text-link">View Artifact &nearr;</a>
+                    </div>
+                </article>
+                ====================================================================== -->
+
             </div>
-            <p id="no-results" class="no-results hidden">No projects found matching your search term.</p>
+
+            <p id="no-results" class="no-results hidden">No projects matched your current search or filter.</p>
         </section>
 
-        <!-- Contact Form Section -->
-        <section id="contact">
-            <h2>Contact & Collaboration</h2>
-            <form id="contact-form" novalidate>
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name">
-                </div>
+        <!-- About & Technical Stack -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-tag">Background &amp; Capabilities</span>
+                <h2>Engineering Foundations Meets Applied AI</h2>
+            </div>
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email">
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a Mechanical Engineering student completing my undergraduate degree while applying Machine Learning and AI to engineering workflows and data-driven decision systems. Rather than treating AI as a black-box generator, I anchor models and LLM architectures in physical conservation laws, international testing standards (ASME, ISO), and leakage-free validation protocols.
+                    </p>
                 </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                <div class="skills-panel">
+                    <div class="skill-group">
+                        <h3>Machine Learning &amp; Data</h3>
+                        <p>Python, scikit-learn, pandas, Grouped Cross-Validation, PR-AUC Evaluation, Permutation Importance, RAG &amp; Prompt Architecture</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Mechanical &amp; Simulation</h3>
+                        <p>OpenVSP / VSPAERO, XFLR5, Finite Difference Method (FDM), FEA Structural Analysis, ASME Sec. VIII, ISO 4288 &amp; ISO 527-2 Metrology</p>
+                    </div>
                 </div>
-
-                <button type="submit" id="submit-btn">Send Message</button>
-            </form>
-            <div id="form-feedback" class="feedback-msg"></div>
+            </div>
         </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Contact &amp; Collaboration</h2>
+            </div>
+
+            <div class="contact-card">
+                <p class="contact-lead">
+                    Available for opportunities in Machine Learning Engineering, Applied AI, Data Science, and Mechanical/Simulation Engineering.
+                </p>
+
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <span class="contact-label">Direct Email</span>
+                        <div class="email-copy-row">
+                            <a href="mailto:adlerhenry.mn@gmail.com" class="contact-value">adlerhenry.mn@gmail.com</a>
+                            <button type="button" id="copy-email-btn" class="btn-small">Copy</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/henry-adler-minto-neves-a819b7285" target="_blank" rel="noopener noreferrer" class="contact-value">
+                            linkedin.com/in/henry-adler-minto-neves &nearr;
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-label">GitHub</span>
+                        <a href="https://github.com/HenryAdler" target="_blank" rel="noopener noreferrer" class="contact-value">
+                            github.com/HenryAdler &nearr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Andrew M. Neves. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Henry Adler Minto Neves. All rights reserved.</p>
+            <p class="footer-note">Built for clarity and technical precision.</p>
+        </div>
     </footer>
+
+    <!-- Case Study Detail Modal (Single-HTML Architecture) -->
+    <div id="case-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div>
+                    <span id="modal-tag" class="section-tag">Case Study</span>
+                    <h2 id="modal-title">Project Title</h2>
+                </div>
+                <button type="button" id="close-modal-btn" class="close-btn" aria-label="Close modal">&times;</button>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!-- Populated dynamically via script.js -->
+            </div>
+            <div class="modal-footer">
+                <a id="modal-primary-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Artifact &nearr;</a>
+                <button type="button" id="modal-dismiss-btn" class="btn btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
